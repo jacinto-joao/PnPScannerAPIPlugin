@@ -1,0 +1,17 @@
+{
+  "name": "com.seuic.scanner.api",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.seuic.scanner.api",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Jacinto Joao",
+  "license": "ISC"
+}

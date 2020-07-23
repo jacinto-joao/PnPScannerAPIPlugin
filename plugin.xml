@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.seuic.scanner.api" version="1.0.0"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>PnPScannerAPIPlugin</name>
+    <js-module name="PnPScannerAPIPlugin" src="www/PnPScannerAPIPlugin.js">
+        <clobbers target="cordova.plugins.PnPScannerAPIPlugin" />
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="PnPScannerAPIPlugin">
+                <param name="android-package" value="com.seuic.scanner.api.PnPScannerAPIPlugin" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <source-file src="src/android/PnPScannerAPIPlugin.java" target-dir="src/com/seuic/scanner/api/PnPScannerAPIPlugin" />
+        <source-file src="src/android/libs/ScannerAPI.jar" target-dir="libs" />
+    </platform>
+</plugin>
